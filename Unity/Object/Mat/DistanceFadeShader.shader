@@ -63,7 +63,7 @@ Shader "Custom/DistanceFadeShader"
                     normalizedDistance = 1.0f;
                 }
                 else {
-                    normalizedDistance = (distanceToPlayer - minDistance) / (maxDistance = minDistance);
+                    normalizedDistance = (distanceToPlayer - minDistance) / (maxDistance - minDistance);
                 }
 
                 // min ~ max를 0~1로 정규화
